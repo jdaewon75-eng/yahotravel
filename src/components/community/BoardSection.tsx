@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Bell, ExternalLink, Calendar, ChevronDown, ChevronUp, Search, ShieldCheck } from 'lucide-react';
-import { NOTICES } from '../../data/mockData';
+import { NOTICES, COMPANY_INFO } from '../../data/mockData';
 
 interface BoardSectionProps {
   onOpenInquiry: () => void;
@@ -166,7 +166,7 @@ export const BoardSection: React.FC<BoardSectionProps> = ({ onOpenInquiry }) => 
             </p>
           </div>
           <a
-            href="https://blog.naver.com"
+            href={COMPANY_INFO.naverBlogUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3.5 rounded-xl bg-[#03C75A] hover:bg-[#02b351] text-white font-bold text-sm shadow-md transition-all flex items-center gap-2 flex-shrink-0"

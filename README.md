@@ -70,6 +70,7 @@ npm install
 VITE_ADMIN_EMAIL=info.yahotravel@gmail.com
 VITE_COMPANY_TEL=055-736-6068
 VITE_KAKAO_CHAT_URL=http://pf.kakao.com/_zxiSrX/chat
+VITE_NAVER_BLOG_URL=https://blog.naver.com/jdaewon75
 VITE_WEB3FORMS_KEY=your_web3forms_key_here
 ```
 

@@ -39,6 +39,7 @@ jobs:
           VITE_ADMIN_EMAIL: "info.yahotravel@gmail.com"
           VITE_COMPANY_TEL: "055-736-6068"
           VITE_KAKAO_CHAT_URL: "http://pf.kakao.com/_zxiSrX/chat"
+          VITE_NAVER_BLOG_URL: "https://blog.naver.com/jdaewon75"
           VITE_WEB3FORMS_KEY: "8ffc27ff-bbd8-4d15-949b-e0a99e11cded"
         run: npm run build
 

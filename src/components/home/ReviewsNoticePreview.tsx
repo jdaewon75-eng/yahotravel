@@ -1,6 +1,6 @@
 import React from 'react';
 import { Bell, ArrowRight, Shield, Calendar, ExternalLink, ThumbsUp } from 'lucide-react';
-import { NOTICES } from '../../data/mockData';
+import { NOTICES, COMPANY_INFO } from '../../data/mockData';
 
 interface ReviewsNoticePreviewProps {
   onViewBoard: () => void;
@@ -107,7 +107,7 @@ export const ReviewsNoticePreview: React.FC<ReviewsNoticePreviewProps> = ({ onVi
                 마쓰야마 온천 료칸, 규슈 명문 골프장 및 홋카이도 현지 답사 사진과 최신 생생한 일본 소식을 확인해 보세요.
               </p>
               <a
-                href="https://blog.naver.com"
+                href={COMPANY_INFO.naverBlogUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-700 hover:text-emerald-800 pt-1"

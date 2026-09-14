@@ -7,9 +7,9 @@ export const COMPANY_INFO = {
   businessType: '국내외여행업 등록',
   address: '경상남도 거제시 고현로 11길 24, 502호 (고현동, 삼덕빌딩)',
   tel: import.meta.env.VITE_COMPANY_TEL || '055-736-6068',
-  email: import.meta.env.VITE_ADMIN_EMAIL || 'iseohyun@hanmail.net',
-  kakaoChannelUrl: import.meta.env.VITE_KAKAO_CHAT_URL || 'https://pf.kakao.com/_ETRrX/chat',
-  kakaoFriendUrl: 'https://pf.kakao.com/_ETRrX/friend', // 친구추가 URL
+  email: import.meta.env.VITE_ADMIN_EMAIL || 'info.yahotravel@gmail.com',
+  kakaoChannelUrl: import.meta.env.VITE_KAKAO_CHAT_URL || 'http://pf.kakao.com/_zxiSrX/chat',
+  kakaoFriendUrl: 'http://pf.kakao.com/_zxiSrX/friend', // 친구추가 URL
   insurance: '관광사업 등록 인허가보증보험 3,000만 원 가입',
   travelInsurance: '전 고객 KB손해보험 / DB손해보험 여행자보험 필수 가입',
   tagline: '우리가 꿈꾸던 일본, 우리끼리 여유롭게',

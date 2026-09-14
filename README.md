@@ -67,9 +67,9 @@ npm install
 ### 2. 환경 변수 설정
 프로젝트 루트에 `.env` 파일을 생성하고 다음 항목을 설정합니다 (참고: `.env.example`):
 ```env
-VITE_ADMIN_EMAIL=iseohyun@hanmail.net
+VITE_ADMIN_EMAIL=info.yahotravel@gmail.com
 VITE_COMPANY_TEL=055-736-6068
-VITE_KAKAO_CHAT_URL=https://pf.kakao.com/_ETRrX/chat
+VITE_KAKAO_CHAT_URL=http://pf.kakao.com/_zxiSrX/chat
 VITE_WEB3FORMS_KEY=your_web3forms_key_here
 ```
 

@@ -10,7 +10,7 @@ export const COMPANY_INFO = {
   email: import.meta.env.VITE_ADMIN_EMAIL || 'info.yahotravel@gmail.com',
   kakaoChannelUrl: import.meta.env.VITE_KAKAO_CHAT_URL || 'http://pf.kakao.com/_zxiSrX/chat',
   kakaoFriendUrl: 'http://pf.kakao.com/_zxiSrX/friend', // 친구추가 URL
-  naverBlogUrl: import.meta.env.VITE_NAVER_BLOG_URL || 'https://blog.naver.com/jdaewon75',
+  naverBlogUrl: import.meta.env.VITE_NAVER_BLOG_URL || 'https://m.blog.naver.com/PostList.naver?blogId=jdaewon75&tab=1',
   insurance: '관광사업 등록 인허가보증보험 3,000만 원 가입',
   travelInsurance: '전 고객 KB손해보험 / DB손해보험 여행자보험 필수 가입',
   tagline: '우리가 꿈꾸던 일본, 우리끼리 여유롭게',

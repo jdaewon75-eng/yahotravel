@@ -179,10 +179,10 @@ ${formData.customRequests.trim() || '(특별 요청사항 없음)'}
     }
 
     // 2. Web3Forms API로 실제 관리자 이메일 발송
-    const accessKey = import.meta.env.VITE_WEB3FORMS_KEY;
+    const accessKey = import.meta.env.VITE_WEB3FORMS_KEY || '7272a2ac-24a2-4bc9-9dc3-51c908b4fd60';
 
     if (!accessKey) {
-      console.warn('VITE_WEB3FORMS_KEY is not configured in .env');
+      console.warn('VITE_WEB3FORMS_KEY is not configured');
       setEmailSentStatus('failed');
       setIsSubmitting(false);
       setSubmitted(true);
@@ -191,27 +191,36 @@ ${formData.customRequests.trim() || '(특별 요청사항 없음)'}
     }
 
     try {
+      const payload: Record<string, any> = {
+        access_key: accessKey,
+        subject: `[야호트래블 견적신청] ${formData.name}님 - ${formData.departureDate} (${getRegionLabel(formData.region)})`,
+        from_name: '야호트래블 웹사이트',
+        name: formData.name,
+        message: generateSummaryText(),
+        '신청자(단체명)': formData.name,
+        '휴대폰연락처': formData.phone || '미입력',
+        '이메일주소': formData.email || '미입력',
+        '여행목적': getPurposeLabel(formData.purpose),
+        '희망지역': getRegionLabel(formData.region),
+        '출발희망일': formData.departureDate,
+        '여행기간': formData.duration,
+        '성인인원': `${formData.adultCount}명`,
+        '소아인원': formData.childCount > 0 ? `${formData.childCount}명` : '없음',
+        '상세요청사항': formData.customRequests.trim() || '없음',
+      };
+
+      if (formData.email?.trim()) {
+        payload.email = formData.email.trim();
+        payload.replyto = formData.email.trim();
+      }
+
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           Accept: 'application/json',
         },
-        body: JSON.stringify({
-          access_key: accessKey,
-          subject: `[야호트래블 견적신청] ${formData.name}님 - ${formData.departureDate} (${getRegionLabel(formData.region)})`,
-          from_name: '야호트래블 웹사이트',
-          '신청자(단체명)': formData.name,
-          '휴대폰연락처': formData.phone || '미입력',
-          '이메일주소': formData.email || '미입력',
-          '여행목적': getPurposeLabel(formData.purpose),
-          '희망지역': getRegionLabel(formData.region),
-          '출발희망일': formData.departureDate,
-          '여행기간': formData.duration,
-          '성인인원': `${formData.adultCount}명`,
-          '소아인원': formData.childCount > 0 ? `${formData.childCount}명` : '없음',
-          '상세요청사항': formData.customRequests.trim() || '없음',
-        }),
+        body: JSON.stringify(payload),
       });
 
       const data = await response.json();

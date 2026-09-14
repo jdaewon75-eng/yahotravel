@@ -81,7 +81,7 @@ export const TOUR_PACKAGES: TourPackage[] = [
     duration: '2박 3일',
     departure: '김해(부산) 직항 출발 / 인천 출발 가능',
     badge: '베스트셀러',
-    thumbnail: 'https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1000&auto=format&fit=crop',
+    thumbnail: 'https://images.unsplash.com/photo-1696329938280-5eb678dd4202?q=80&w=1000&auto=format&fit=crop',
     tags: ['도고온천', '료칸 가이세키', '우치코 전통거리', '전용차량', '4~8인단독'],
     highlight: [
       '일본에서 가장 오래된 3,000년 역사 도고온천 본관 탐방',

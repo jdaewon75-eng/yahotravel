@@ -27,7 +27,7 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ onOpenInquiry, onExplore
       subtitle: '명문 골프장, 전통 온천 료칸, 전용 리무진 버스까지 직계약 인프라.\n성공적인 기업 포상 및 비즈니스 인센티브 투어를 완성합니다.',
       ctaText: '기업/단체 제안서 요청',
       ctaPurpose: 'corporate_incentive',
-      image: 'https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1920&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1696329938280-5eb678dd4202?q=80&w=1920&auto=format&fit=crop',
       accent: '기업 인센티브 & 명문 골프'
     }
   ];

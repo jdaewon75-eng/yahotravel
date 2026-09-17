@@ -1,5 +1,5 @@
 import React from 'react';
-import { Compass, ShieldCheck, Handshake, CheckCircle } from 'lucide-react';
+import { Compass, ShieldCheck, Handshake, CheckCircle, MapPin } from 'lucide-react';
 import { CORE_STRENGTHS } from '../../data/mockData';
 
 export const CoreStrengths: React.FC = () => {
@@ -7,6 +7,8 @@ export const CoreStrengths: React.FC = () => {
     switch (iconName) {
       case 'Compass':
         return <Compass className="w-8 h-8 text-yaho-gold-400 stroke-[2.2]" />;
+      case 'MapPin':
+        return <MapPin className="w-8 h-8 text-emerald-400 stroke-[2.2]" />;
       case 'ShieldCheck':
         return <ShieldCheck className="w-8 h-8 text-emerald-400 stroke-[2.2]" />;
       case 'Handshake':

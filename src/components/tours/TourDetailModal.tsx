@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, Calendar, MapPin, Check, AlertCircle, Phone, ArrowRight, ShieldCheck } from 'lucide-react';
+import { X, Calendar, MapPin, Check, Phone, ArrowRight, ShieldCheck } from 'lucide-react';
 import { TourPackage } from '../../types';
 import { COMPANY_INFO } from '../../data/mockData';
 
@@ -138,37 +138,6 @@ export const TourDetailModal: React.FC<TourDetailModalProps> = ({ tour, onClose,
                   </div>
                 </div>
               ))}
-            </div>
-          </div>
-
-          {/* 포함 / 불포함 안내 */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="bg-emerald-50/70 border border-emerald-200 p-5 rounded-2xl">
-              <h4 className="font-black text-emerald-900 text-sm mb-2 flex items-center gap-1.5">
-                <Check className="w-4 h-4 text-emerald-600" />
-                포함 사항
-              </h4>
-              <ul className="space-y-1.5 text-xs sm:text-sm text-emerald-800">
-                {tour.includes.map((inc, i) => (
-                  <li key={i} className="flex items-center gap-1.5">
-                    • {inc}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="bg-slate-50 border border-slate-200 p-5 rounded-2xl">
-              <h4 className="font-black text-slate-800 text-sm mb-2 flex items-center gap-1.5">
-                <AlertCircle className="w-4 h-4 text-slate-500" />
-                불포함 사항
-              </h4>
-              <ul className="space-y-1.5 text-xs sm:text-sm text-slate-600">
-                {tour.excludes.map((exc, e) => (
-                  <li key={e} className="flex items-center gap-1.5">
-                    • {exc}
-                  </li>
-                ))}
-              </ul>
             </div>
           </div>
 

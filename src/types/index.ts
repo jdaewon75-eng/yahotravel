@@ -27,8 +27,8 @@ export interface TourPackage {
   highlight: string[];
   summary: string;
   itinerary: DayItinerary[];
-  includes: string[];
-  excludes: string[];
+  includes?: string[];
+  excludes?: string[];
   recommendedFor: string[];
 }
 

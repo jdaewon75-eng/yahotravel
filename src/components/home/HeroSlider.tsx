@@ -14,7 +14,7 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ onOpenInquiry, onExplore
       id: 'private',
       badge: '20년 현지 베테랑 직접 기획 · 전용차량 케어',
       title: '우리가 꿈꾸던 일본,\n우리끼리 여유롭게',
-      subtitle: '대형 패키지의 번잡함 없이, 우리 가족·지인만을 위한 단독 차량과 맞춤 일정.\n20년 현지 전문가가 기획부터 운전·인솔까지 완벽하게 밀착 동행합니다.',
+      subtitle: '대형 패키지의 번잡함 없이, 우리 가족·지인만을 위한 단독 차량과 맞춤 일정.\n20년 현지 전문가가 기획부터 현장 케어까지 완벽하게 밀착 동행합니다.',
       ctaText: '소규모 맞춤 견적 문의',
       ctaPurpose: 'private_family',
       image: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=1920&auto=format&fit=crop',
@@ -109,7 +109,7 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ onOpenInquiry, onExplore
                 </span>
                 <span className="flex items-center gap-1.5">
                   <Shield className="w-4 h-4 text-yaho-gold-400" />
-                  한·일 대형면허 안전 운행
+                  단독 전용 차량 안전 이동
                 </span>
               </div>
 

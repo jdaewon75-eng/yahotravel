@@ -32,7 +32,7 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab, onOpenI
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <span className="flex items-center gap-1.5 font-medium truncate">
             <span className="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-            20년 일본 현지 전문가 직접 인솔 · 4~8인 소규모 프라이빗 & 기업 단체
+            20년 일본 현지 전문가 밀착 케어 · 4~8인 소규모 프라이빗 & 기업 단체
           </span>
           <div className="hidden sm:flex items-center gap-4 text-xs">
             <span className="text-slate-300">거제시 고현동 삼덕빌딩</span>

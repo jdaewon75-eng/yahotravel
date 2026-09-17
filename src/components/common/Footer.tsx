@@ -42,7 +42,7 @@ export const Footer: React.FC = () => {
               <div>
                 <h4 className="font-bold text-white text-base mb-1">24시간 현지 비상 대응 체계</h4>
                 <p className="text-sm text-slate-400 leading-relaxed">
-                  20년 경력의 대표 직접 인솔 및 일본 현지 네트워크·병원·영사관 즉시 연계 시스템을 가동합니다.
+                  20년 경력의 대표 현지 밀착 동행 및 일본 현지 네트워크·병원·영사관 즉시 연계 시스템을 가동합니다.
                 </p>
               </div>
             </div>
@@ -61,7 +61,7 @@ export const Footer: React.FC = () => {
               </span>
             </div>
             <p className="text-sm text-slate-400 max-w-lg leading-relaxed">
-              우리가 꿈꾸던 일본, 우리끼리 여유롭게. 20년 일본 현지 베테랑 대표가 직접 기획하고 운전·인솔하는 남부권 최고의 프리미엄 소규모 프라이빗 투어 & 기업 인센티브 전문 여행사입니다.
+              우리가 꿈꾸던 일본, 우리끼리 여유롭게. 20년 일본 현지 베테랑 대표가 직접 기획하고 현지 밀착 동행하는 남부권 최고의 프리미엄 소규모 프라이빗 투어 & 기업 인센티브 전문 여행사입니다.
             </p>
             <div className="pt-2 text-xs text-slate-500 space-y-1">
               <p>상호명: {COMPANY_INFO.name} | 대표자: {COMPANY_INFO.ceo}</p>

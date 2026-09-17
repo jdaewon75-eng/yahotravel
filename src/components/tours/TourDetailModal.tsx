@@ -73,7 +73,7 @@ export const TourDetailModal: React.FC<TourDetailModalProps> = ({ tour, onClose,
               <span className="text-xs font-bold text-slate-500 uppercase block mb-1">진행 방식</span>
               <p className="font-bold text-slate-800 flex items-center gap-2">
                 <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                20년 전문가 직접 운전 및 전용 차량 단독 프라이빗 투어
+                20년 전문가 맞춤 기획 및 전용 차량 단독 프라이빗 투어
               </p>
             </div>
           </div>

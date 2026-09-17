@@ -37,7 +37,7 @@ export const AboutSection: React.FC = () => {
                     <span className="text-[11px] font-extrabold tracking-widest text-yaho-gold-400 uppercase block">
                       OFFICIAL PROFILE
                     </span>
-                    <span className="text-xs text-slate-300 font-medium">야호트래블 대표 / 총괄 인솔자</span>
+                    <span className="text-xs text-slate-300 font-medium">야호트래블 대표 / 총괄 투어 디렉터</span>
                   </div>
                 </div>
                 <span className="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 text-xs font-bold flex items-center gap-1">
@@ -56,7 +56,7 @@ export const AboutSection: React.FC = () => {
                   <span className="text-base font-normal text-slate-400">Jin Dae-won</span>
                 </h3>
                 <p className="text-sm text-yaho-gold-300 font-semibold pt-1">
-                  일본 현지 20년 여행사 운영 및 VIP 특화 투어 총괄 인솔
+                  일본 현지 20년 여행사 운영 및 VIP 특화 투어 총괄 기획·동행
                 </p>
               </div>
 
@@ -64,7 +64,7 @@ export const AboutSection: React.FC = () => {
               <div className="relative z-10 pt-4 border-t border-white/10 space-y-2 text-xs text-slate-300">
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0" />
-                  <span>한국 1종 대형 & 일본 영업용 버스 2종 면허 동시 보유</span>
+                  <span>일본 현지 20년 여행업 공인 노하우 & 네트워크</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0" />
@@ -72,28 +72,28 @@ export const AboutSection: React.FC = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0" />
-                  <span>전 일정 단독 전용 차량 직접 운전 및 1:1 현장 밀착 케어</span>
+                  <span>전 일정 단독 전용 차량 배차 및 1:1 현장 밀착 케어</span>
                 </div>
               </div>
             </div>
 
-            {/* 대표 면허 및 자격 뱃지 */}
+            {/* 대표 전문 경력 및 역량 뱃지 */}
             <div className="bg-yaho-navy-50 p-5 rounded-2xl border border-yaho-navy-100 space-y-2">
               <span className="text-xs font-extrabold text-yaho-navy-900 uppercase tracking-wider block">
-                SPECIAL LICENSES & CERTIFICATES
+                SPECIAL CAREER & EXPERTISE
               </span>
               <ul className="text-xs sm:text-sm text-slate-700 space-y-1.5 font-medium">
                 <li className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
-                  <span>대한민국 1종 대형 운전면허 보유</span>
+                  <span>20년간 일본 현지 여행사 직접 운영 및 전문 기획</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
-                  <span>일본 버스·택시 영업용 2종 운전면허 보유</span>
+                  <span>일본 현지 도로 및 최적 이동 동선 완벽 숙지</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
-                  <span>20년간 일본 현지 여행사 운영 및 VVIP 인솔 경력</span>
+                  <span>수많은 기업 VIP 및 소규모 맞춤 투어 총괄 경력</span>
                 </li>
               </ul>
             </div>
@@ -119,7 +119,7 @@ export const AboutSection: React.FC = () => {
               </p>
               <p>
                 야호트래블은 <strong>'내 가족이 떠나는 여행'</strong>이라는 마음 하나로 탄생했습니다. 
-                우리의 오랜 숙련된 현지 직계약 네트워크와 직접 운전 가능한 한·일 영업용 면허를 바탕으로, 
+                우리의 오랜 숙련된 현지 직계약 네트워크와 검증된 전용 차량 인프라를 바탕으로, 
                 안전하고 품격 있는 단독 전용 차량과 온천 료칸, 숨겨진 로컬 맛집까지 오롯이 우리 일행만을 위한 여정을 선물합니다.
               </p>
               <p className="font-bold text-yaho-navy-900">
@@ -156,9 +156,9 @@ export const AboutSection: React.FC = () => {
               <div className="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center">
                 <Car className="w-6 h-6" />
               </div>
-              <h4 className="font-black text-lg text-slate-900">한·일 면허 동시 보유</h4>
+              <h4 className="font-black text-lg text-slate-900">단독 전용 차량 안전 이동</h4>
               <p className="text-sm text-slate-600 leading-relaxed">
-                대표가 직접 한국 1종 및 일본 영업용 버스 면허를 보유하여, 현지 지리를 꿰뚫는 가장 안전한 단독 차량 투어를 제공합니다.
+                검증된 현지 전용 차량 네트워크와 최적의 이동 동선 설계를 통해, 번잡함 없는 가장 편안하고 안전한 여행을 보장합니다.
               </p>
             </div>
 

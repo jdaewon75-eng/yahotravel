@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>야호트래블 (YAHO TRAVEL) | 일본 프리미엄 맞춤 여행 &amp; 소규모 프라이빗 투어</title>
+    <link>https://yahotravel.co.kr/</link>
+    <description>20년 현지 베테랑의 일본 맞춤 여행. 소규모 프라이빗 투어, 기업 단체 인센티브, 명문 골프·온천 힐링 여행 전문 - 야호트래블</description>
+    <language>ko</language>
+    <lastBuildDate>Mon, 21 Sep 2026 20:52:00 +0900</lastBuildDate>
+    <atom:link href="https://yahotravel.co.kr/rss.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>야호트래블 - 일본 소규모 단독 프라이빗 투어 &amp; 기업 맞춤 연수</title>
+      <link>https://yahotravel.co.kr/</link>
+      <description>20년 현지 베테랑 직접 기획 및 전용차량 안전 케어. 4인~8인 소규모 가족·지인 프라이빗 투어, 기업 VIP 인센티브, 명문 골프 및 온천 힐링 여행.</description>
+      <pubDate>Mon, 21 Sep 2026 12:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://yahotravel.co.kr/#tours</guid>
+    </item>
+
+    <item>
+      <title>마쓰야마 힐링 온천 &amp; 미식 프라이빗 투어 (2박 3일)</title>
+      <link>https://yahotravel.co.kr/</link>
+      <description>3,000년 전통 도고온천, 우치코 고택마을 산책, 에히메 귤 디저트 체험 및 최고급 료칸 가이세키 정찬 플랜.</description>
+      <pubDate>Mon, 21 Sep 2026 12:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://yahotravel.co.kr/#matsuyama</guid>
+    </item>
+
+    <item>
+      <title>삿포로 &amp; 비에이·후라노 대자연 감성 여행 (3박 4일)</title>
+      <link>https://yahotravel.co.kr/</link>
+      <description>사계채의 언덕 파노라마, 청의 호수, 삿포로 3대 게요리 &amp; 징기스칸 미식 투어, 로맨틱 오타루 운하 야경.</description>
+      <pubDate>Mon, 21 Sep 2026 12:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://yahotravel.co.kr/#sapporo</guid>
+    </item>
+
+    <item>
+      <title>규슈 명문 골프 &amp; 유후인 럭셔리 온천 힐링 투어 (3박 4일)</title>
+      <link>https://yahotravel.co.kr/</link>
+      <description>후쿠오카 명문 챔피언십 코스 단독 라운딩, 유후인 프라이빗 노천탕 료칸 휴식, 전 일정 전용 리무진 수송.</description>
+      <pubDate>Mon, 21 Sep 2026 12:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://yahotravel.co.kr/#kyushu</guid>
+    </item>
+  </channel>
+</rss>

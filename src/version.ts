@@ -5,6 +5,6 @@
  * - BUILD_TAG: 배포 즉시 브라우저 캐시를 무효화하고 최신 리소스를 보장하는 일자 기반 태그
  */
 export const APP_VERSION = '1.0.1';
-export const BUILD_TAG = '20260921v2';
+export const BUILD_TAG = '20260921v3';
 export const LAST_UPDATED = '2026-09-21';
 export const COMPANY_NAME = '야호트래블 (YAHO TRAVEL)';

@@ -35,7 +35,6 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab, onOpenI
             20년 일본 현지 전문가 밀착 케어 · 4~8인 소규모 프라이빗 & 기업 단체
           </span>
           <div className="hidden sm:flex items-center gap-4 text-xs">
-            <span className="text-slate-300">거제시 고현동 삼덕빌딩</span>
             <a 
               href={`tel:${COMPANY_INFO.tel}`}
               className="flex items-center gap-1 font-semibold text-yaho-gold-300 hover:text-white transition-colors"

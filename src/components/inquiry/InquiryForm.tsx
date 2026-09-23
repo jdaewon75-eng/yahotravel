@@ -72,7 +72,7 @@ export const InquiryForm: React.FC<InquiryFormProps> = ({ initialPurpose, initia
       case 'private_family':
         return '소규모 프라이빗 투어 (4~8인)';
       case 'corporate_incentive':
-        return '기업체 포상/인센티브 단체';
+        return '우리끼리 맞춤 단체 여행 (친목·동호회·대가족)';
       case 'golf_hotspring':
         return '힐링 온천 & 명문 골프 맞춤';
       default:
@@ -408,7 +408,7 @@ ${formData.customRequests.trim() || '(특별 요청사항 없음)'}
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                   {[
                     { id: 'private_family', label: '소규모 프라이빗 투어', desc: '4~8인 가족/친목 단독 차량' },
-                    { id: 'corporate_incentive', label: '기업 인센티브 & 단체', desc: '조선소/기업체 맞춤 포상' },
+                    { id: 'corporate_incentive', label: '우리끼리 맞춤 단체 여행', desc: '친목회·동호회·대가족 힐링 단체' },
                     { id: 'golf_hotspring', label: '힐링 온천 & 골프 투어', desc: '명문 골프장 & 최고급 료칸' },
                   ].map((p) => (
                     <label

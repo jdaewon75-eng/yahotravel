@@ -1,5 +1,5 @@
 import React from 'react';
-import { Users, HeartHandshake, Sparkles, ArrowRight } from 'lucide-react';
+import { Users, HeartHandshake, Flag, ArrowRight } from 'lucide-react';
 import { CORE_SERVICES } from '../../data/mockData';
 
 interface ServiceCardsProps {
@@ -27,7 +27,7 @@ export const ServiceCards: React.FC<ServiceCardsProps> = ({ onOpenInquiry }) => 
       case 'corporate':
         return <HeartHandshake className="w-5 h-5 text-yaho-navy-900" />;
       case 'healing-golf':
-        return <Sparkles className="w-5 h-5 text-yaho-navy-900" />;
+        return <Flag className="w-5 h-5 text-yaho-navy-900" />;
       default:
         return null;
     }

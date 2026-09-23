@@ -63,11 +63,11 @@ export const CORE_SERVICES = [
   },
   {
     id: 'healing-golf',
-    title: '힐링 온천 & 명문 골프 투어',
-    subtitle: '명품 료칸 가이세키 & 라운딩',
-    desc: '3,000년 역사의 도고온천, 유후인 온천 료칸과 홋카이도/규슈 명문 골프장 직계약 티타임 확보. 진정한 휴식과 레저를 함께 완성합니다.',
-    badge: '프리미엄 힐링',
-    image: 'https://images.unsplash.com/photo-1545569341-9eb8b30979d9?q=80&w=1200&auto=format&fit=crop',
+    title: '일본 명문 골프 투어',
+    subtitle: '명문 골프장 황금 티타임 & 전용 차량 송영',
+    desc: '홋카이도, 규슈, 시코쿠 등 일본 주요 명문 골프장의 최적 티타임을 단독 확보합니다. 무거운 골프백 이동 걱정 없이 단독 전용 차량으로 공항-골프장-호텔을 편안하게 이동하며 완벽한 라운딩을 즐기세요.',
+    badge: '명문 코스 직계약',
+    image: 'https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?q=80&w=1200&auto=format&fit=crop',
   }
 ];
 

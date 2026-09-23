@@ -74,7 +74,7 @@ export const InquiryForm: React.FC<InquiryFormProps> = ({ initialPurpose, initia
       case 'corporate_incentive':
         return '우리끼리 맞춤 단체 여행 (친목·동호회·대가족)';
       case 'golf_hotspring':
-        return '힐링 온천 & 명문 골프 맞춤';
+        return '일본 명문 골프 투어 (단독 티타임 & 전용차량)';
       default:
         return '기타 맞춤 여행';
     }
@@ -416,7 +416,7 @@ ${formData.customRequests.trim() || '(특별 요청사항 없음)'}
                   {[
                     { id: 'private_family', label: '소규모 프라이빗 투어', desc: '4~8인 가족/친목 단독 차량' },
                     { id: 'corporate_incentive', label: '우리끼리 맞춤 단체 여행', desc: '친목회·동호회·대가족 힐링 단체' },
-                    { id: 'golf_hotspring', label: '힐링 온천 & 골프 투어', desc: '명문 골프장 & 최고급 료칸' },
+                    { id: 'golf_hotspring', label: '일본 명문 골프 투어', desc: '명문 골프장 라운딩 & 단독 티타임' },
                   ].map((p) => (
                     <label
                       key={p.id}

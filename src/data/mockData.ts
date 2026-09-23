@@ -55,10 +55,10 @@ export const CORE_SERVICES = [
   },
   {
     id: 'corporate',
-    title: '기업 포상 & VIP 인센티브',
-    subtitle: '거제 및 남부권 기업 맞춤 단체',
-    desc: '거제 조선소 협력사, 관공서, 기업체를 위한 품격 높은 단체 여행 기획. 전용 세미나실, 만찬 연회, VIP 맞춤 의전까지 빈틈없이 케어합니다.',
-    badge: '기업체 단체 특화',
+    title: '우리끼리 맞춤 단체 여행',
+    subtitle: '친목회·동호회·대가족 힐링 단체',
+    desc: '패키지의 빡빡한 쇼핑과 새벽 출발 대신, 우리 일행의 걸음걸이에 맞춘 여유로운 힐링 여행. 엄선된 로컬 맛집과 최고급 온천 료칸까지 20년 전문가가 완벽하게 케어합니다.',
+    badge: '우리만의 단독 투어',
     image: 'https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200&auto=format&fit=crop',
   },
   {

@@ -94,9 +94,9 @@ export const InquiryForm: React.FC<InquiryFormProps> = ({ initialPurpose, initia
       case 'okinawa':
         return '나하·오키나와(남부,중부,북부섬)등 전지역';
       case 'custom':
-        return '일본 기타 전지역 단독 맞춤 기획';
+        return '6. 기타 일본 전지역 단독 맞춤 기획';
       default:
-        return '일본 기타 지역 맞춤';
+        return '6. 기타 일본 전지역 단독 맞춤 기획';
     }
   };
 
@@ -456,7 +456,7 @@ ${formData.customRequests.trim() || '(특별 요청사항 없음)'}
                       <option value="honshu">3. 도쿄·혼슈(오사카,나고야,도야마)등 전지역</option>
                       <option value="sapporo">4. 삿포로·홋카이도(오타루,하코다테,비에이)등 전지역</option>
                       <option value="okinawa">5. 나하·오키나와(남부,중부,북부섬)등 전지역</option>
-                      <option value="custom">기타 일본 전지역 단독 맞춤 기획</option>
+                      <option value="custom">6. 기타 일본 전지역 단독 맞춤 기획</option>
                     </select>
                   </div>
 

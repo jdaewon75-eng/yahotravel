@@ -1,4 +1,4 @@
-export type TourRegion = 'all' | 'matsuyama' | 'sapporo' | 'fukuoka' | 'custom';
+export type TourRegion = 'all' | 'fukuoka' | 'matsuyama' | 'honshu' | 'sapporo' | 'okinawa' | 'custom';
 
 export interface DayItinerary {
   day: number;

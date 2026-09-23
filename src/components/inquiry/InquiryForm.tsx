@@ -13,7 +13,7 @@ export const InquiryForm: React.FC<InquiryFormProps> = ({ initialPurpose, initia
     name: '',
     phone: '',
     email: '',
-    region: 'matsuyama',
+    region: 'fukuoka',
     departureDate: '',
     duration: '2박 3일',
     adultCount: 4,
@@ -82,12 +82,19 @@ export const InquiryForm: React.FC<InquiryFormProps> = ({ initialPurpose, initia
 
   const getRegionLabel = (r: string) => {
     switch (r) {
-      case 'matsuyama':
-        return '마쓰야마 (도고온천/소도시)';
-      case 'sapporo':
-        return '삿포로 / 홋카이도';
       case 'fukuoka':
-        return '후쿠오카 / 규슈 온천·골프';
+        return '후쿠오카·규슈 (벳부,구마모토,가고시마)등 전지역';
+      case 'matsuyama':
+        return '마쓰야마·시코쿠(다카마쓰, 고치)등 전지역';
+      case 'honshu':
+      case 'tokyo':
+        return '도쿄·혼슈(오사카,나고야,도야마)등 전지역';
+      case 'sapporo':
+        return '삿포로·홋카이도(오타루,하코다테,비에이)등 전지역';
+      case 'okinawa':
+        return '나하·오키나와(남부,중부,북부섬)등 전지역';
+      case 'custom':
+        return '일본 기타 전지역 단독 맞춤 기획';
       default:
         return '일본 기타 지역 맞춤';
     }
@@ -444,10 +451,12 @@ ${formData.customRequests.trim() || '(특별 요청사항 없음)'}
                       onChange={(e) => setFormData({ ...formData, region: e.target.value })}
                       className="w-full px-4 py-3 rounded-xl border border-slate-300 text-slate-800 text-base font-medium focus:ring-2 focus:ring-yaho-navy-900 focus:border-yaho-navy-900 outline-none"
                     >
-                      <option value="matsuyama">마쓰야마 (에히메 소도시 & 도고온천)</option>
-                      <option value="sapporo">삿포로 / 홋카이도 (오타루, 비에이)</option>
-                      <option value="fukuoka">후쿠오카 / 규슈 (유후인 온천 & 골프)</option>
-                      <option value="custom">기타 일본 지역 맞춤 기획 (오사카, 도쿄 등)</option>
+                      <option value="fukuoka">1. 후쿠오카·규슈 (벳부,구마모토,가고시마)등 전지역</option>
+                      <option value="matsuyama">2. 마쓰야마·시코쿠(다카마쓰, 고치)등 전지역</option>
+                      <option value="honshu">3. 도쿄·혼슈(오사카,나고야,도야마)등 전지역</option>
+                      <option value="sapporo">4. 삿포로·홋카이도(오타루,하코다테,비에이)등 전지역</option>
+                      <option value="okinawa">5. 나하·오키나와(남부,중부,북부섬)등 전지역</option>
+                      <option value="custom">기타 일본 전지역 단독 맞춤 기획</option>
                     </select>
                   </div>
 

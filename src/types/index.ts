@@ -17,7 +17,7 @@ export interface TourPackage {
   id: string;
   title: string;
   subtitle: string;
-  region: 'matsuyama' | 'sapporo' | 'fukuoka' | 'custom';
+  region: 'matsuyama' | 'sapporo' | 'fukuoka' | 'honshu' | 'okinawa' | 'custom';
   regionName: string;
   duration: string; // 예: "2박 3일"
   departure: string; // 예: "김해(부산) 출발 기준 / 전국 출발 맞춤"

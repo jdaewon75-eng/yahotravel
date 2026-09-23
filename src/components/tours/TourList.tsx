@@ -17,6 +17,8 @@ export const TourList: React.FC<TourListProps> = ({ onSelectTour, onInquiryWithT
     { id: 'matsuyama', label: '마쓰야마 (시코쿠)' },
     { id: 'sapporo', label: '삿포로 / 홋카이도' },
     { id: 'fukuoka', label: '후쿠오카 / 규슈' },
+    { id: 'honshu', label: '도쿄·혼슈' },
+    { id: 'okinawa', label: '나하·오키나와' },
   ];
 
   const filteredTours = selectedRegion === 'all'

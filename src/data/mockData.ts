@@ -1,7 +1,9 @@
 import { TourPackage, ReviewItem, NoticeItem, MonthlyTourPackage } from '../types';
+import matsuyamaShimanamiImg from '../assets/images/matsuyama_shimanami_sunset.jpg';
+import kansaiAutumnImg from '../assets/images/kansai_autumn_garden.jpg';
 import kyushuKurokawaImg from '../assets/images/kyushu_kurokawa_onsen.jpg';
 import hokkaidoOtaruImg from '../assets/images/hokkaido_otaru_snow.jpg';
-import kansaiAutumnImg from '../assets/images/kansai_autumn_garden.jpg';
+import okinawaWhaleSharkImg from '../assets/images/okinawa_whale_shark.jpg';
 
 export const COMPANY_INFO = {
   name: '야호트래블',
@@ -442,7 +444,7 @@ export const MONTHLY_TOURS: MonthlyTourPackage[] = [
     flight: '김해 ↔ 마쓰야마',
     duration: '3박 4일',
     catchphrase: '3,000년 도고온천과 세토내해 다리 위의 가을',
-    image: 'https://images.unsplash.com/photo-1696329938280-5eb678dd4202?q=80&w=1200&auto=format&fit=crop',
+    image: matsuyamaShimanamiImg,
     accentColor: {
       badgeBg: 'bg-amber-500',
       badgeText: 'text-amber-950',
@@ -643,7 +645,7 @@ export const MONTHLY_TOURS: MonthlyTourPackage[] = [
     duration: '3박 4일',
     catchphrase: '2월에 만나는 일본 벚꽃과 혹등고래',
     note: '벚꽃·고래 모두 2월이 절정',
-    image: 'https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?q=80&w=1200&auto=format&fit=crop',
+    image: okinawaWhaleSharkImg,
     accentColor: {
       badgeBg: 'bg-pink-500',
       badgeText: 'text-pink-950',

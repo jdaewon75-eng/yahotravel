@@ -77,11 +77,11 @@ export const App: React.FC = () => {
             {/* 2. 3대 핵심 강점 (20년 현지 전문가 / 로컬 스토리텔링 / 직계약 인프라) */}
             <CoreStrengths />
 
-            {/* 3. 월별 추천 관광지 섹터 (10월, 11월, 12월, 1월, 2월 테마 코스) */}
-            <MonthlyTours onInquiryWithTour={handleInquiryWithTour} />
-
-            {/* 4. 주요 서비스 소개 카드 3종 (소규모 프라이빗 / 맞춤 단체 / 힐링 골프온천) */}
+            {/* 3. 주력 맞춤 서비스 카드 3종 (소규모 프라이빗 / 맞춤 단체 / 힐링 골프온천) */}
             <ServiceCards onOpenInquiry={handleOpenInquiry} />
+
+            {/* 4. 월별 추천 관광지 섹터 (10월, 11월, 12월, 1월, 2월 테마 코스) */}
+            <MonthlyTours onInquiryWithTour={handleInquiryWithTour} />
 
             {/* 5. 대표 상품 샘플 코스 미리보기 (마쓰야마 2박3일 등) */}
             <FeaturedTours

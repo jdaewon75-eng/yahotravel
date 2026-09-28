@@ -439,7 +439,7 @@ export const MONTHLY_TOURS: MonthlyTourPackage[] = [
     flight: '김해 ↔ 마쓰야마',
     duration: '3박 4일',
     catchphrase: '3,000년 도고온천과 세토내해 다리 위의 가을',
-    image: 'https://images.unsplash.com/photo-1578632767115-351597cf2477?q=80&w=1200&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1696329938280-5eb678dd4202?q=80&w=1200&auto=format&fit=crop',
     accentColor: {
       badgeBg: 'bg-amber-500',
       badgeText: 'text-amber-950',
@@ -489,7 +489,7 @@ export const MONTHLY_TOURS: MonthlyTourPackage[] = [
     flight: '김해 ↔ 간사이',
     duration: '3박 4일',
     catchphrase: '나라·교토·고베·오사카 + 아리마온천',
-    image: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=1200&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1578632767115-351597cf2477?q=80&w=1200&auto=format&fit=crop',
     accentColor: {
       badgeBg: 'bg-red-500',
       badgeText: 'text-red-950',
@@ -539,7 +539,7 @@ export const MONTHLY_TOURS: MonthlyTourPackage[] = [
     flight: '김해 ↔ 후쿠오카',
     duration: '3박 4일',
     catchphrase: '후쿠오카·오이타·구마모토, 온천과 겨울 감성',
-    image: 'https://images.unsplash.com/photo-1545569341-9eb8b30979d9?q=80&w=1200&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200&auto=format&fit=crop',
     accentColor: {
       badgeBg: 'bg-teal-500',
       badgeText: 'text-teal-950',
@@ -589,7 +589,7 @@ export const MONTHLY_TOURS: MonthlyTourPackage[] = [
     flight: '김해 ↔ 신치토세',
     duration: '3박 4일',
     catchphrase: '눈 덮인 운하와 설경 노천탕',
-    image: 'https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1200&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1517154421773-0529f29ea451?q=80&w=1200&auto=format&fit=crop',
     accentColor: {
       badgeBg: 'bg-sky-500',
       badgeText: 'text-sky-950',
@@ -640,7 +640,7 @@ export const MONTHLY_TOURS: MonthlyTourPackage[] = [
     duration: '3박 4일',
     catchphrase: '2월에 만나는 일본 벚꽃과 혹등고래',
     note: '벚꽃·고래 모두 2월이 절정',
-    image: 'https://images.unsplash.com/photo-1528164344705-475426879c0d?q=80&w=1200&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?q=80&w=1200&auto=format&fit=crop',
     accentColor: {
       badgeBg: 'bg-pink-500',
       badgeText: 'text-pink-950',

@@ -203,6 +203,11 @@ export const MonthlyTours: React.FC<MonthlyToursProps> = ({ onInquiryWithTour })
                 <img
                   src={currentTour.image}
                   alt={currentTour.title}
+                  loading="lazy"
+                  onError={(e) => {
+                    // Fallback to verified image if load fails
+                    (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200&auto=format&fit=crop';
+                  }}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />

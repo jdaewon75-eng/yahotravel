@@ -589,7 +589,7 @@ export const MONTHLY_TOURS: MonthlyTourPackage[] = [
     flight: '김해 ↔ 신치토세',
     duration: '3박 4일',
     catchphrase: '눈 덮인 운하와 설경 노천탕',
-    image: 'https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=1200&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1200&auto=format&fit=crop',
     accentColor: {
       badgeBg: 'bg-sky-500',
       badgeText: 'text-sky-950',

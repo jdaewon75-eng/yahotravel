@@ -1,4 +1,5 @@
 import { TourPackage, ReviewItem, NoticeItem, MonthlyTourPackage } from '../types';
+import kyushuKurokawaImg from '../assets/images/kyushu_kurokawa_onsen.jpg';
 
 export const COMPANY_INFO = {
   name: '야호트래블',
@@ -539,7 +540,7 @@ export const MONTHLY_TOURS: MonthlyTourPackage[] = [
     flight: '김해 ↔ 후쿠오카',
     duration: '3박 4일',
     catchphrase: '후쿠오카·오이타·구마모토, 온천과 겨울 감성',
-    image: 'https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200&auto=format&fit=crop',
+    image: kyushuKurokawaImg,
     accentColor: {
       badgeBg: 'bg-teal-500',
       badgeText: 'text-teal-950',

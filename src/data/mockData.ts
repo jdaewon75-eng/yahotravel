@@ -489,7 +489,7 @@ export const MONTHLY_TOURS: MonthlyTourPackage[] = [
     flight: '김해 ↔ 간사이',
     duration: '3박 4일',
     catchphrase: '나라·교토·고베·오사카 + 아리마온천',
-    image: 'https://images.unsplash.com/photo-1578632767115-351597cf2477?q=80&w=1200&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1545569341-9eb8b30979d9?q=80&w=1200&auto=format&fit=crop',
     accentColor: {
       badgeBg: 'bg-red-500',
       badgeText: 'text-red-950',
@@ -589,7 +589,7 @@ export const MONTHLY_TOURS: MonthlyTourPackage[] = [
     flight: '김해 ↔ 신치토세',
     duration: '3박 4일',
     catchphrase: '눈 덮인 운하와 설경 노천탕',
-    image: 'https://images.unsplash.com/photo-1517154421773-0529f29ea451?q=80&w=1200&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=1200&auto=format&fit=crop',
     accentColor: {
       badgeBg: 'bg-sky-500',
       badgeText: 'text-sky-950',

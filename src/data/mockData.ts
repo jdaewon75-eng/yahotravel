@@ -1,6 +1,7 @@
 import { TourPackage, ReviewItem, NoticeItem, MonthlyTourPackage } from '../types';
 import kyushuKurokawaImg from '../assets/images/kyushu_kurokawa_onsen.jpg';
 import hokkaidoOtaruImg from '../assets/images/hokkaido_otaru_snow.jpg';
+import kansaiAutumnImg from '../assets/images/kansai_autumn_garden.jpg';
 
 export const COMPANY_INFO = {
   name: '야호트래블',
@@ -491,7 +492,7 @@ export const MONTHLY_TOURS: MonthlyTourPackage[] = [
     flight: '김해 ↔ 간사이',
     duration: '3박 4일',
     catchphrase: '나라·교토·고베·오사카 + 아리마온천',
-    image: 'https://images.unsplash.com/photo-1545569341-9eb8b30979d9?q=80&w=1200&auto=format&fit=crop',
+    image: kansaiAutumnImg,
     accentColor: {
       badgeBg: 'bg-red-500',
       badgeText: 'text-red-950',

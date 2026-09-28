@@ -73,16 +73,16 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab, onOpenI
             </div>
           </div>
 
-          {/* 데스크톱 메뉴 */}
-          <nav className="hidden md:flex items-center space-x-1 lg:space-x-2">
+          {/* 데스크톱 메뉴 (일렬 완벽 정렬) */}
+          <nav className="hidden md:flex items-center gap-1 lg:gap-2 xl:gap-3">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => handleNavClick(item.id)}
-                className={`px-4 py-2.5 rounded-lg text-[16px] font-bold transition-all ${
+                className={`px-3 lg:px-3.5 xl:px-4 py-2 rounded-xl text-sm lg:text-[15px] xl:text-[16px] font-bold transition-all whitespace-nowrap leading-none flex items-center justify-center ${
                   activeTab === item.id
-                    ? 'text-yaho-navy-900 bg-yaho-navy-50 font-extrabold'
-                    : 'text-slate-600 hover:text-yaho-navy-900 hover:bg-slate-50'
+                    ? 'text-yaho-navy-900 bg-yaho-navy-50 font-extrabold shadow-2xs'
+                    : 'text-slate-600 hover:text-yaho-navy-900 hover:bg-slate-100/70'
                 }`}
               >
                 {item.label}

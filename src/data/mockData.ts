@@ -1,4 +1,4 @@
-import { TourPackage, ReviewItem, NoticeItem } from '../types';
+import { TourPackage, ReviewItem, NoticeItem, MonthlyTourPackage } from '../types';
 
 export const COMPANY_INFO = {
   name: '야호트래블',
@@ -427,3 +427,258 @@ export const NOTICES: NoticeItem[] = [
     content: '기업 포상 및 임직원 워크숍, VIP 바이어 의전을 위한 맞춤형 단체 투어 제안서를 무료로 제작해 드립니다. 예산과 인원에 맞춘 전용 리무진 버스, 명문 골프장 티타임, 단독 만찬 연회장 수속을 원스톱으로 지원합니다.'
   }
 ];
+
+export const MONTHLY_TOURS: MonthlyTourPackage[] = [
+  {
+    id: 'oct-matsuyama',
+    month: 10,
+    monthLabel: '10월',
+    icon: '🍁',
+    seasonTag: '가을 힐링 & 세토내해',
+    title: '마쓰야마·시마나미 가이도 일주',
+    flight: '김해 ↔ 마쓰야마',
+    duration: '3박 4일',
+    catchphrase: '3,000년 도고온천과 세토내해 다리 위의 가을',
+    image: 'https://images.unsplash.com/photo-1578632767115-351597cf2477?q=80&w=1200&auto=format&fit=crop',
+    accentColor: {
+      badgeBg: 'bg-amber-500',
+      badgeText: 'text-amber-950',
+      activeTab: 'bg-gradient-to-r from-amber-600 to-orange-500 text-white shadow-amber-200',
+      border: 'border-amber-200',
+      glow: 'shadow-amber-500/10'
+    },
+    highlights: [
+      '3,000년 역사 도고온천 본관 입욕 & 봇짱 가라쿠리 시계',
+      '세토내해 비경 구루시마 해협대교 & 기로산 전망공원',
+      '고즈넉한 우치코 고택마을 & 시모나다역 감성 바다 석양'
+    ],
+    days: [
+      {
+        day: 1,
+        rawText: '마쓰야마 도착 → 마쓰야마성(로프웨이) → 반스이소 → 오카이도 상점가 → 도고온천 료칸 (도고온천 본관 입욕·봇짱 가라쿠리 시계)',
+        spots: ['마쓰야마 도착', '마쓰야마성(로프웨이)', '반스이소', '오카이도 상점가', '도고온천 료칸 (본관 입욕·봇짱 시계)'],
+        stay: '도고온천 료칸'
+      },
+      {
+        day: 2,
+        rawText: '이마바리성 → 기로산 전망공원(구루시마 해협대교 조망) → 오미시마 오야마즈미 신사 → 이쿠치지마 고산지·미라이 언덕 → 이마바리 타월 미술관 → 도고 숙박',
+        spots: ['이마바리성', '기로산 전망공원(구루시마 해협대교 조망)', '오미시마 오야마즈미 신사', '이쿠치지마 고산지·미라이 언덕', '이마바리 타월 미술관'],
+        stay: '도고온천 숙박'
+      },
+      {
+        day: 3,
+        rawText: '우치코 고택마을·우치코좌 → 오즈 가류산장 → 오즈성 → 시모나다역 바다 석양 → 도고 숙박',
+        spots: ['우치코 고택마을·우치코좌', '오즈 가류산장', '오즈성', '시모나다역 바다 석양'],
+        stay: '도고온천 숙박'
+      },
+      {
+        day: 4,
+        rawText: '이시테지 → 도고 하이카라 거리 쇼핑 → 마쓰야마 공항 → 김해 귀국',
+        spots: ['이시테지', '도고 하이카라 거리 쇼핑', '마쓰야마 공항', '김해 귀국'],
+        stay: '귀국 (일정 종료)'
+      }
+    ]
+  },
+  {
+    id: 'nov-kansai',
+    month: 11,
+    monthLabel: '11월',
+    icon: '🍂',
+    seasonTag: '간사이 4대 도시 단풍 절정',
+    title: '간사이 4대 도시 단풍 투어',
+    flight: '김해 ↔ 간사이',
+    duration: '3박 4일',
+    catchphrase: '나라·교토·고베·오사카 + 아리마온천',
+    image: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=1200&auto=format&fit=crop',
+    accentColor: {
+      badgeBg: 'bg-red-500',
+      badgeText: 'text-red-950',
+      activeTab: 'bg-gradient-to-r from-red-600 to-rose-500 text-white shadow-red-200',
+      border: 'border-red-200',
+      glow: 'shadow-red-500/10'
+    },
+    highlights: [
+      '나라 사슴공원 & 도다이지 거대 대불 탐방',
+      '교토 도후쿠지·기요미즈데라·아라시야마 붉은 단풍 명소',
+      '일본 3대 고온천 아리마온천 전통 료칸 가이세키 만찬'
+    ],
+    days: [
+      {
+        day: 1,
+        rawText: '간사이 도착 → 나라 도다이지 → 나라공원 사슴 → 가스가타이샤 → 오사카성 → 도톤보리·신사이바시 (오사카 숙박)',
+        spots: ['간사이 도착', '나라 도다이지', '나라공원 사슴', '가스가타이샤', '오사카성', '도톤보리·신사이바시'],
+        stay: '오사카 숙박'
+      },
+      {
+        day: 2,
+        rawText: '후시미이나리 → 도후쿠지 단풍 → 기요미즈데라 → 산넨자카·니넨자카 → 기온 하나미코지 (교토 숙박)',
+        spots: ['후시미이나리 (천개의 토리이)', '도후쿠지 단풍', '기요미즈데라', '산넨자카·니넨자카', '기온 하나미코지'],
+        stay: '교토 숙박'
+      },
+      {
+        day: 3,
+        rawText: '금각사 → 아라시야마 도게쓰교 → 대나무숲·덴류지 → 아리마온천 료칸 (가이세키)',
+        spots: ['금각사', '아라시야마 도게쓰교', '대나무숲·덴류지', '아리마온천 료칸 (가이세키 만찬)'],
+        stay: '아리마온천 료칸'
+      },
+      {
+        day: 4,
+        rawText: '고베 기타노 이진칸 → 메리켄파크 → 하버랜드 → 간사이 공항 → 김해 귀국',
+        spots: ['고베 기타노 이진칸', '메리켄파크', '하버랜드', '간사이 공항', '김해 귀국'],
+        stay: '귀국 (일정 종료)'
+      }
+    ]
+  },
+  {
+    id: 'dec-kyushu',
+    month: 12,
+    monthLabel: '12월',
+    icon: '❄️',
+    seasonTag: '규슈 3현 온천 & 겨울 감성',
+    title: '북규슈 3개 현 온천 일주',
+    flight: '김해 ↔ 후쿠오카',
+    duration: '3박 4일',
+    catchphrase: '후쿠오카·오이타·구마모토, 온천과 겨울 감성',
+    image: 'https://images.unsplash.com/photo-1545569341-9eb8b30979d9?q=80&w=1200&auto=format&fit=crop',
+    accentColor: {
+      badgeBg: 'bg-teal-500',
+      badgeText: 'text-teal-950',
+      activeTab: 'bg-gradient-to-r from-teal-600 to-cyan-600 text-white shadow-teal-200',
+      border: 'border-teal-200',
+      glow: 'shadow-teal-500/10'
+    },
+    highlights: [
+      '유후인 긴린호 물안개 & 구로카와 깊은 산속 온천마을',
+      '벳부 지옥순례 & 아소 쿠사센리 웅장한 대자연',
+      '야나가와 따뜻한 코타쓰 뱃놀이 & 하카타 크리스마스 마켓'
+    ],
+    days: [
+      {
+        day: 1,
+        rawText: '후쿠오카 도착 → 다자이후 텐만구 → 유후인 긴린호 → 유노쓰보 거리 → 유후인 온천 료칸',
+        spots: ['후쿠오카 도착', '다자이후 텐만구', '유후인 긴린호', '유노쓰보 거리', '유후인 온천 료칸'],
+        stay: '유후인 온천 료칸'
+      },
+      {
+        day: 2,
+        rawText: '벳부 지옥순례 → 구주 꿈의 대현수교 → 아소 쿠사센리 초원 → 구로카와 온천 마을',
+        spots: ['벳부 지옥순례', '구주 꿈의 대현수교', '아소 쿠사센리 초원', '구로카와 온천 마을'],
+        stay: '구로카와/아소 온천 료칸'
+      },
+      {
+        day: 3,
+        rawText: '구마모토성 → 야나가와 코타쓰 뱃놀이 → 하카타 크리스마스 마켓 → 나카스 야타이 (후쿠오카 숙박)',
+        spots: ['구마모토성', '야나가와 코타쓰 뱃놀이', '하카타 크리스마스 마켓', '나카스 야타이 (포장마차)'],
+        stay: '후쿠오카 숙박'
+      },
+      {
+        day: 4,
+        rawText: '후쿠오카 타워 → 모모치 해변 → 캐널시티·텐진 쇼핑 → 김해 귀국',
+        spots: ['후쿠오카 타워', '모모치 해변', '캐널시티·텐진 쇼핑', '김해 귀국'],
+        stay: '귀국 (일정 종료)'
+      }
+    ]
+  },
+  {
+    id: 'jan-hokkaido',
+    month: 1,
+    monthLabel: '1월',
+    icon: '☃️',
+    seasonTag: '홋카이도 설국 노천탕 & 미식',
+    title: '홋카이도 설국 온천 투어',
+    flight: '김해 ↔ 신치토세',
+    duration: '3박 4일',
+    catchphrase: '눈 덮인 운하와 설경 노천탕',
+    image: 'https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1200&auto=format&fit=crop',
+    accentColor: {
+      badgeBg: 'bg-sky-500',
+      badgeText: 'text-sky-950',
+      activeTab: 'bg-gradient-to-r from-sky-600 to-blue-600 text-white shadow-sky-200',
+      border: 'border-sky-200',
+      glow: 'shadow-sky-500/10'
+    },
+    highlights: [
+      '노보리베쓰 지옥계곡 & 도야호 사이로 전망대 설경 파노라마',
+      '조잔케이 눈 속 노천 온천 료칸 숙박 & 삿포로 3대 게요리 석식',
+      '낭만 가득한 오타루 운하 설경 & 오르골당·르타오 본점'
+    ],
+    days: [
+      {
+        day: 1,
+        rawText: '신치토세 도착 → 시코쓰호 설경 → 노보리베쓰 지옥계곡 → 노보리베쓰 온천 호텔',
+        spots: ['신치토세 도착', '시코쓰호 설경', '노보리베쓰 지옥계곡', '노보리베쓰 온천 호텔'],
+        stay: '노보리베쓰 온천 호텔'
+      },
+      {
+        day: 2,
+        rawText: '오유누마 → 도야호 사이로 전망대 → 쇼와신잔·우스잔 로프웨이 → 삿포로 (스스키노, 3대 게요리 석식)',
+        spots: ['오유누마', '도야호 사이로 전망대', '쇼와신잔·우스잔 로프웨이', '삿포로 스스키노 (3대 게요리 만찬)'],
+        stay: '삿포로 시내 호텔'
+      },
+      {
+        day: 3,
+        rawText: '오타루 운하 설경 → 오르골당·기타이치 유리공방 → 르타오 본점 → 사카이마치 거리 → 조잔케이 온천 료칸 (눈 속 노천탕)',
+        spots: ['오타루 운하 설경', '오르골당·기타이치 유리공방', '르타오 본점', '사카이마치 거리', '조잔케이 온천 료칸 (눈 속 노천탕)'],
+        stay: '조잔케이 온천 료칸'
+      },
+      {
+        day: 4,
+        rawText: '삿포로 시계탑 → 오도리공원 → 시로이코이비토 파크 → 신치토세 공항 쇼핑 → 김해 귀국',
+        spots: ['삿포로 시계탑', '오도리공원', '시로이코이비토 파크', '신치토세 공항 쇼핑', '김해 귀국'],
+        stay: '귀국 (일정 종료)'
+      }
+    ]
+  },
+  {
+    id: 'feb-okinawa',
+    month: 2,
+    monthLabel: '2월',
+    icon: '🌸',
+    seasonTag: '2월 절정 벚꽃 & 혹등고래',
+    title: '오키나와 벚꽃 & 고래 완전일주',
+    flight: '김해 ↔ 나하',
+    duration: '3박 4일',
+    catchphrase: '2월에 만나는 일본 벚꽃과 혹등고래',
+    note: '벚꽃·고래 모두 2월이 절정',
+    image: 'https://images.unsplash.com/photo-1528164344705-475426879c0d?q=80&w=1200&auto=format&fit=crop',
+    accentColor: {
+      badgeBg: 'bg-pink-500',
+      badgeText: 'text-pink-950',
+      activeTab: 'bg-gradient-to-r from-pink-500 to-rose-500 text-white shadow-pink-200',
+      border: 'border-pink-200',
+      glow: 'shadow-pink-500/10'
+    },
+    highlights: [
+      '일본에서 가장 빠른 2월 진분홍 벚꽃 (야에다케 & 나고 중앙공원)',
+      '겨울 한정 게라마 제도 웅장한 혹등고래 관찰 크루즈',
+      '추라우미 수족관, 만좌모, 고우리대교 하트바위 에메랄드 절경'
+    ],
+    days: [
+      {
+        day: 1,
+        rawText: '나하 도착 → 슈리성 공원 → 국제거리 → 세나가섬 우미카지테라스 석양 (나하 숙박)',
+        spots: ['나하 도착', '슈리성 공원', '국제거리', '세나가섬 우미카지테라스 석양'],
+        stay: '나하 시내 숙박'
+      },
+      {
+        day: 2,
+        rawText: '게라마 제도 혹등고래 관찰 크루즈 → 오키나와 월드 교쿠센도 동굴 → 니라이카나이 다리 → 아메리칸 빌리지 → 온나 해변 리조트',
+        spots: ['게라마 제도 혹등고래 관찰 크루즈', '오키나와 월드 교쿠센도 동굴', '니라이카나이 다리', '아메리칸 빌리지', '온나 해변 리조트'],
+        stay: '온나 해변 리조트'
+      },
+      {
+        day: 3,
+        rawText: '만좌모 → 추라우미 수족관 → 비세 후쿠기 가로수길 → 모토부 야에다케 벚꽃 → 나고 중앙공원 벚꽃 → 고우리대교 하트바위',
+        spots: ['만좌모', '추라우미 수족관', '비세 후쿠기 가로수길', '모토부 야에다케 벚꽃', '나고 중앙공원 벚꽃', '고우리대교 하트바위'],
+        stay: '온나 해변 리조트'
+      },
+      {
+        day: 4,
+        rawText: '나고 파인애플 파크 → 류큐무라 전통마을 → 나하 공항 → 김해 귀국',
+        spots: ['나고 파인애플 파크', '류큐무라 전통마을', '나하 공항', '김해 귀국'],
+        stay: '귀국 (일정 종료)'
+      }
+    ]
+  }
+];
+

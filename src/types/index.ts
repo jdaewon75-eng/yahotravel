@@ -68,3 +68,34 @@ export interface NoticeItem {
   isImportant?: boolean;
   content: string;
 }
+
+export interface MonthlyTourDay {
+  day: number;
+  spots: string[];
+  stay?: string;
+  rawText: string;
+}
+
+export interface MonthlyTourPackage {
+  id: string;
+  month: number;
+  monthLabel: string;
+  icon: string;
+  seasonTag: string;
+  title: string;
+  flight: string;
+  duration: string;
+  catchphrase: string;
+  note?: string;
+  image: string;
+  accentColor: {
+    badgeBg: string;
+    badgeText: string;
+    activeTab: string;
+    border: string;
+    glow: string;
+  };
+  highlights: string[];
+  days: MonthlyTourDay[];
+}
+

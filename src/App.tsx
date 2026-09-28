@@ -6,6 +6,7 @@ import { HeroSlider } from './components/home/HeroSlider';
 import { CoreStrengths } from './components/home/CoreStrengths';
 import { ServiceCards } from './components/home/ServiceCards';
 import { FeaturedTours } from './components/home/FeaturedTours';
+import { MonthlyTours } from './components/home/MonthlyTours';
 import { ReviewsNoticePreview } from './components/home/ReviewsNoticePreview';
 import { AboutSection } from './components/about/AboutSection';
 import { TourList } from './components/tours/TourList';
@@ -36,12 +37,27 @@ export const App: React.FC = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const handleTabChange = (tab: string) => {
+    if (tab === 'monthly') {
+      setActiveTab('home');
+      setTimeout(() => {
+        const el = document.getElementById('monthly-tours');
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 50);
+      return;
+    }
+    setActiveTab(tab);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-[#faf9f6] text-slate-800">
       {/* 고정 상단 헤더 */}
       <Header
         activeTab={activeTab}
-        setActiveTab={setActiveTab}
+        setActiveTab={handleTabChange}
         onOpenInquiry={handleOpenInquiry}
       />
 
@@ -61,10 +77,13 @@ export const App: React.FC = () => {
             {/* 2. 3대 핵심 강점 (20년 현지 전문가 / 로컬 스토리텔링 / 직계약 인프라) */}
             <CoreStrengths />
 
-            {/* 3. 주요 서비스 소개 카드 3종 (소규모 프라이빗 / 기업 인센티브 / 힐링 골프온천) */}
+            {/* 3. 월별 추천 관광지 섹터 (10월, 11월, 12월, 1월, 2월 테마 코스) */}
+            <MonthlyTours onInquiryWithTour={handleInquiryWithTour} />
+
+            {/* 4. 주요 서비스 소개 카드 3종 (소규모 프라이빗 / 맞춤 단체 / 힐링 골프온천) */}
             <ServiceCards onOpenInquiry={handleOpenInquiry} />
 
-            {/* 4. 대표 상품 샘플 코스 미리보기 (마쓰야마 2박3일 등) */}
+            {/* 5. 대표 상품 샘플 코스 미리보기 (마쓰야마 2박3일 등) */}
             <FeaturedTours
               onSelectTour={setSelectedTour}
               onInquiryWithTour={handleInquiryWithTour}
@@ -74,7 +93,7 @@ export const App: React.FC = () => {
               }}
             />
 
-            {/* 5. 고객 생생 후기 & 최근 공지사항 & 기업 제안서 콜아웃 */}
+            {/* 6. 고객 생생 후기 & 최근 공지사항 & 기업 제안서 콜아웃 */}
             <ReviewsNoticePreview
               onViewBoard={() => {
                 setActiveTab('board');

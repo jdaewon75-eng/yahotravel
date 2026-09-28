@@ -13,6 +13,7 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab, onOpenI
 
   const navItems = [
     { id: 'home', label: '홈' },
+    { id: 'monthly', label: '월별 추천 코스' },
     { id: 'tours', label: '맞춤 여행 상품' },
     { id: 'about', label: '회사소개' },
     { id: 'inquiry', label: '견적 및 여행 문의' },

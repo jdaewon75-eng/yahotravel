@@ -49,37 +49,38 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab, onOpenI
 
       {/* 메인 네비게이션 바 */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
-          {/* 로고 영역 */}
+        <div className="flex items-center justify-between h-20 gap-4 lg:gap-8">
+          
+          {/* 로고 영역 (수평/수직 완벽 정렬) */}
           <div 
             onClick={() => handleNavClick('home')}
-            className="flex items-center gap-3 cursor-pointer group py-1 select-none"
+            className="flex items-center gap-2.5 sm:gap-3 cursor-pointer group select-none flex-shrink-0"
           >
-            <div className="w-11 h-11 rounded-xl bg-yaho-navy-900 text-yaho-gold-400 flex items-center justify-center shadow-md group-hover:bg-yaho-navy-800 transition-colors flex-shrink-0">
-              <Compass className="w-6 h-6 stroke-[2.2]" />
+            <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-yaho-navy-900 text-yaho-gold-400 flex items-center justify-center shadow-md group-hover:bg-yaho-navy-800 transition-colors flex-shrink-0">
+              <Compass className="w-5 h-5 sm:w-6 sm:h-6 stroke-[2.2]" />
             </div>
             <div className="flex flex-col justify-center">
-              <div className="flex items-center gap-2 leading-none">
-                <span className="text-2xl font-black tracking-tight text-yaho-navy-950 group-hover:text-yaho-navy-800 transition-colors leading-none">
+              <div className="flex items-center gap-2">
+                <span className="text-xl sm:text-2xl font-black tracking-tight text-yaho-navy-950 group-hover:text-yaho-navy-800 transition-colors leading-tight">
                   야호트래블
                 </span>
-                <span className="text-[11px] font-extrabold tracking-widest text-yaho-gold-700 uppercase bg-yaho-gold-50 border border-yaho-gold-200/80 px-1.5 py-0.5 rounded leading-none">
+                <span className="text-[10px] sm:text-[11px] font-extrabold tracking-wider text-yaho-gold-700 uppercase bg-yaho-gold-50 border border-yaho-gold-200/80 px-1.5 py-0.5 rounded leading-tight">
                   YAHO TRAVEL
                 </span>
               </div>
-              <span className="text-[11px] text-slate-500 font-semibold mt-1.5 leading-none hidden sm:inline-block tracking-tight">
+              <span className="text-[11px] text-slate-500 font-semibold tracking-tight leading-tight hidden lg:inline-block">
                 일본 프리미엄 프라이빗 & 인센티브 전문
               </span>
             </div>
           </div>
 
-          {/* 데스크톱 메뉴 (일렬 완벽 정렬) */}
-          <nav className="hidden md:flex items-center gap-1 lg:gap-2 xl:gap-3">
+          {/* 데스크톱 메뉴 (로고와 완벽한 일렬 수평 정렬) */}
+          <nav className="hidden md:flex items-center justify-center gap-1 lg:gap-1.5 xl:gap-2.5 flex-1 max-w-2xl mx-auto">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => handleNavClick(item.id)}
-                className={`px-3 lg:px-3.5 xl:px-4 py-2 rounded-xl text-sm lg:text-[15px] xl:text-[16px] font-bold transition-all whitespace-nowrap leading-none flex items-center justify-center ${
+                className={`px-2.5 lg:px-3.5 xl:px-4 py-2 rounded-xl text-sm lg:text-[15px] xl:text-[16px] font-bold transition-all whitespace-nowrap leading-none flex items-center justify-center ${
                   activeTab === item.id
                     ? 'text-yaho-navy-900 bg-yaho-navy-50 font-extrabold shadow-2xs'
                     : 'text-slate-600 hover:text-yaho-navy-900 hover:bg-slate-100/70'
@@ -91,12 +92,12 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab, onOpenI
           </nav>
 
           {/* 우측 CTA 버튼 */}
-          <div className="hidden lg:flex items-center gap-3">
+          <div className="hidden lg:flex items-center gap-2.5 xl:gap-3 flex-shrink-0">
             <a
               href={`tel:${COMPANY_INFO.tel}`}
-              className="flex items-center gap-1.5 px-3.5 py-2.5 rounded-lg text-slate-700 hover:text-yaho-navy-900 hover:bg-slate-100 text-sm font-bold transition-colors"
+              className="flex items-center gap-1.5 px-3 py-2 rounded-lg text-slate-700 hover:text-yaho-navy-900 hover:bg-slate-100 text-sm font-bold transition-colors whitespace-nowrap"
             >
-              <Phone className="w-4 h-4 text-yaho-navy-800" />
+              <Phone className="w-4 h-4 text-yaho-navy-800 flex-shrink-0" />
               <span>{COMPANY_INFO.tel}</span>
             </a>
             <button
@@ -104,7 +105,7 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab, onOpenI
                 setActiveTab('inquiry');
                 onOpenInquiry();
               }}
-              className="flex items-center gap-1.5 px-5 py-2.5 rounded-xl bg-yaho-navy-900 hover:bg-yaho-navy-800 text-white font-bold text-sm shadow-md hover:shadow-lg transition-all"
+              className="flex items-center gap-1.5 px-4 xl:px-5 py-2.5 rounded-xl bg-yaho-navy-900 hover:bg-yaho-navy-800 text-white font-bold text-sm shadow-md hover:shadow-lg transition-all whitespace-nowrap flex-shrink-0"
             >
               <span>맞춤 견적 신청</span>
               <ChevronRight className="w-4 h-4" />

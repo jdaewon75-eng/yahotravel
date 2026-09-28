@@ -14,6 +14,7 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab, onOpenI
   const navItems = [
     { id: 'home', label: '홈' },
     { id: 'monthly', label: '월별 추천 코스' },
+    { id: 'golf', label: '골프 대표코스' },
     { id: 'tours', label: '맞춤 여행 상품' },
     { id: 'about', label: '회사소개' },
     { id: 'inquiry', label: '견적 및 여행 문의' },
@@ -33,7 +34,14 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab, onOpenI
         <div className="max-w-7xl mx-auto flex justify-between items-center leading-normal">
           <span className="flex items-center gap-2 font-medium truncate">
             <span className="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse flex-shrink-0"></span>
-            <span>20년 일본 현지 전문가 밀착 케어 · 4~8인 소규모 프라이빗 & 기업 단체</span>
+            <a
+              href={COMPANY_INFO.naverBlogUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-base sm:text-[25px] leading-tight font-bold text-slate-100 hover:text-yaho-gold-300 underline-offset-4 hover:underline transition-colors truncate"
+            >
+              다녀오신 분들의 발자취(네이버블로그)
+            </a>
           </span>
           <div className="hidden sm:flex items-center gap-4 text-xs flex-shrink-0">
             <a 
@@ -75,12 +83,12 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab, onOpenI
           </div>
 
           {/* 데스크톱 메뉴 (로고와 완벽한 일렬 수평 정렬) */}
-          <nav className="hidden md:flex items-center justify-center gap-1 lg:gap-1.5 xl:gap-2.5 flex-1 max-w-2xl mx-auto">
+          <nav className="hidden xl:flex items-center justify-center gap-0.5 lg:gap-1 xl:gap-1.5 flex-1 min-w-0 mx-auto">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => handleNavClick(item.id)}
-                className={`px-2.5 lg:px-3.5 xl:px-4 py-2 rounded-xl text-sm lg:text-[15px] xl:text-[16px] font-bold transition-all whitespace-nowrap leading-none flex items-center justify-center ${
+                className={`px-2 lg:px-2.5 xl:px-3 py-2 rounded-xl text-[13px] lg:text-sm xl:text-[15px] font-bold transition-all whitespace-nowrap leading-none flex items-center justify-center ${
                   activeTab === item.id
                     ? 'text-yaho-navy-900 bg-yaho-navy-50 font-extrabold shadow-2xs'
                     : 'text-slate-600 hover:text-yaho-navy-900 hover:bg-slate-100/70'
@@ -95,7 +103,7 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab, onOpenI
           <div className="hidden lg:flex items-center gap-2.5 xl:gap-3 flex-shrink-0">
             <a
               href={`tel:${COMPANY_INFO.tel}`}
-              className="flex items-center gap-1.5 px-3 py-2 rounded-lg text-slate-700 hover:text-yaho-navy-900 hover:bg-slate-100 text-sm font-bold transition-colors whitespace-nowrap"
+              className="hidden items-center gap-1.5 px-3 py-2 rounded-lg text-slate-700 hover:text-yaho-navy-900 hover:bg-slate-100 text-sm font-bold transition-colors whitespace-nowrap"
             >
               <Phone className="w-4 h-4 text-yaho-navy-800 flex-shrink-0" />
               <span>{COMPANY_INFO.tel}</span>
@@ -113,7 +121,7 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab, onOpenI
           </div>
 
           {/* 모바일 햄버거 버튼 */}
-          <div className="flex md:hidden items-center gap-2">
+          <div className="flex xl:hidden items-center gap-2">
             <a
               href={`tel:${COMPANY_INFO.tel}`}
               className="p-2.5 rounded-lg bg-yaho-navy-50 text-yaho-navy-900"
@@ -134,7 +142,7 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab, onOpenI
 
       {/* 모바일 슬라이드 드롭다운 메뉴 */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-t border-slate-100 bg-white px-4 pt-3 pb-6 space-y-2 shadow-xl animate-fadeIn">
+        <div className="xl:hidden border-t border-slate-100 bg-white px-4 pt-3 pb-6 space-y-2 shadow-xl animate-fadeIn">
           {navItems.map((item) => (
             <button
               key={item.id}

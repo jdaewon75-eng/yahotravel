@@ -1,5 +1,6 @@
 import { TourPackage, ReviewItem, NoticeItem, MonthlyTourPackage } from '../types';
 import kyushuKurokawaImg from '../assets/images/kyushu_kurokawa_onsen.jpg';
+import hokkaidoOtaruImg from '../assets/images/hokkaido_otaru_snow.jpg';
 
 export const COMPANY_INFO = {
   name: '야호트래블',
@@ -590,7 +591,7 @@ export const MONTHLY_TOURS: MonthlyTourPackage[] = [
     flight: '김해 ↔ 신치토세',
     duration: '3박 4일',
     catchphrase: '눈 덮인 운하와 설경 노천탕',
-    image: 'https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1200&auto=format&fit=crop',
+    image: hokkaidoOtaruImg,
     accentColor: {
       badgeBg: 'bg-sky-500',
       badgeText: 'text-sky-950',

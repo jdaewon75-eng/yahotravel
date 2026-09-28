@@ -29,18 +29,18 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab, onOpenI
   return (
     <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
       {/* 상단 띠 배너: 50대 및 중장년 고객을 위한 직통 안내 */}
-      <div className="bg-yaho-navy-950 text-slate-200 text-xs sm:text-sm py-1.5 px-4">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <span className="flex items-center gap-1.5 font-medium truncate">
-            <span className="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-            20년 일본 현지 전문가 밀착 케어 · 4~8인 소규모 프라이빗 & 기업 단체
+      <div className="bg-yaho-navy-950 text-slate-200 text-xs sm:text-sm py-2 px-4 border-b border-white/5">
+        <div className="max-w-7xl mx-auto flex justify-between items-center leading-normal">
+          <span className="flex items-center gap-2 font-medium truncate">
+            <span className="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse flex-shrink-0"></span>
+            <span>20년 일본 현지 전문가 밀착 케어 · 4~8인 소규모 프라이빗 & 기업 단체</span>
           </span>
-          <div className="hidden sm:flex items-center gap-4 text-xs">
+          <div className="hidden sm:flex items-center gap-4 text-xs flex-shrink-0">
             <a 
               href={`tel:${COMPANY_INFO.tel}`}
-              className="flex items-center gap-1 font-semibold text-yaho-gold-300 hover:text-white transition-colors"
+              className="flex items-center gap-1.5 font-semibold text-yaho-gold-300 hover:text-white transition-colors"
             >
-              <Phone className="w-3.5 h-3.5" />
+              <Phone className="w-3.5 h-3.5 text-yaho-gold-400" />
               <span>{COMPANY_INFO.tel}</span>
             </a>
           </div>
@@ -53,21 +53,21 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab, onOpenI
           {/* 로고 영역 */}
           <div 
             onClick={() => handleNavClick('home')}
-            className="flex items-center gap-3 cursor-pointer group"
+            className="flex items-center gap-3 cursor-pointer group py-1 select-none"
           >
-            <div className="w-11 h-11 rounded-xl bg-yaho-navy-900 text-yaho-gold-400 flex items-center justify-center shadow-md group-hover:bg-yaho-navy-800 transition-colors">
+            <div className="w-11 h-11 rounded-xl bg-yaho-navy-900 text-yaho-gold-400 flex items-center justify-center shadow-md group-hover:bg-yaho-navy-800 transition-colors flex-shrink-0">
               <Compass className="w-6 h-6 stroke-[2.2]" />
             </div>
-            <div className="flex flex-col">
-              <div className="flex items-baseline gap-1.5">
-                <span className="text-2xl font-black tracking-tight text-yaho-navy-950 group-hover:text-yaho-navy-800 transition-colors">
+            <div className="flex flex-col justify-center">
+              <div className="flex items-center gap-2 leading-none">
+                <span className="text-2xl font-black tracking-tight text-yaho-navy-950 group-hover:text-yaho-navy-800 transition-colors leading-none">
                   야호트래블
                 </span>
-                <span className="text-xs font-bold tracking-widest text-yaho-gold-600 uppercase">
+                <span className="text-[11px] font-extrabold tracking-widest text-yaho-gold-700 uppercase bg-yaho-gold-50 border border-yaho-gold-200/80 px-1.5 py-0.5 rounded leading-none">
                   YAHO TRAVEL
                 </span>
               </div>
-              <span className="text-[11px] text-slate-500 font-medium hidden sm:inline-block">
+              <span className="text-[11px] text-slate-500 font-semibold mt-1.5 leading-none hidden sm:inline-block tracking-tight">
                 일본 프리미엄 프라이빗 & 인센티브 전문
               </span>
             </div>

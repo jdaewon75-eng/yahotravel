@@ -8,6 +8,7 @@ import { ServiceCards } from './components/home/ServiceCards';
 import { FeaturedTours } from './components/home/FeaturedTours';
 import { MonthlyTours } from './components/home/MonthlyTours';
 import { GolfSignature } from './components/home/GolfSignature';
+import { GolfRecommended } from './components/home/GolfRecommended';
 import { ReviewsNoticePreview } from './components/home/ReviewsNoticePreview';
 import { AboutSection } from './components/about/AboutSection';
 import { TourList } from './components/tours/TourList';
@@ -84,6 +85,9 @@ export const App: React.FC = () => {
 
             {/* 4. 월별 추천 관광지 섹터 (10월, 11월, 12월, 1월, 2월 테마 코스) */}
             <MonthlyTours onInquiryWithTour={handleInquiryWithTour} />
+
+            {/* 4-0. 골프 추천코스 (북큐슈 유쿠하시 3색 골프 · 요금/일정/골프장/호텔) */}
+            <GolfRecommended onInquiryWithTour={handleInquiryWithTour} />
 
             {/* 4-1. 골프 대표코스 (규슈·혼슈·시코쿠·홋카이도·오키나와 지역 탭) */}
             <GolfSignature onInquiryWithTour={handleInquiryWithTour} />
